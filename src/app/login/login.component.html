@@ -1,0 +1,38 @@
+<html>
+
+    <nav class="navbar navbar-light fixed-top bg-light flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/inicio">CLINICA 2018</a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="/login">LOGUEAR</a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://spotlightmedia.com/wp-content/uploads/2015/07/ClientLogincol2.png" id="icon" alt="User Icon" />
+    </div>
+
+
+    <!-- Login Form -->
+    <form #loginForm="ngForm"(ngSubmit)="login(loginForm)">
+      <input type="text" id="email" class="fadeIn second" name="email" placeholder="Email" ngModel>
+      <input type="text" id="contraseña" class="fadeIn third" name="contraseña" placeholder="Contraseña" ngModel>
+      <input type="submit" class="fadeIn fourth" value="Loguear">
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">No recuerdas la contraseña?</a>
+    </div>
+  </form>
+  </div>
+</div>
+
+</html>
