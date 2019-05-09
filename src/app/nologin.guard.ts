@@ -15,7 +15,7 @@ canActivate(
       return true;
          }
          else{
-          this.router.navigate(['/usuarios']);
+          this.router.navigate(['/inicio']);
           return false;
          }
   }

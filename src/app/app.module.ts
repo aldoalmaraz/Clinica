@@ -14,12 +14,6 @@ import { NologinGuard } from './nologin.guard';
 import { InicioComponent } from './inicio/inicio.component';
 
 
-const routes: Routes = [
-  {path :'login', component: LoginComponent, canActivate: [NologinGuard]},
-  {path :'usuarios', component: UsuariosComponent, canActivate: [LoginGuard]},
-  {path :'inicio', component: InicioComponent},
-  {path :'usuarios/:id' , component: UsuarioComponent,canActivate:[LoginGuard]}
-];
 
 @NgModule({
   declarations: [
@@ -33,8 +27,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes)
-  ],
+     ],
   providers: [UsuariosService,LoginGuard,NologinGuard],
   bootstrap: [AppComponent]
 })
