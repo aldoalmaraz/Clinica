@@ -1,65 +1,50 @@
 
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-<div class="nav-side-menu">
-    <div class="brand">CLINICA 2018</div>
-  
-        <div class="menu-list">
-            
-            <ul id="menu-content" class="menu-content collapse out">
-                <li>
-                  <a href="#">
-                  <i class="fa fa-dashboard fa-lg"></i> PACIENTES EN ESPERA
-                  </a>
-                </li>
-
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                  <a href="#"><i class="fa fa-gift fa-lg"></i> REGISTROS <span class="arrow"></span></a>
-                </li>
-                <ul class="sub-menu collapse" id="products">
-                    <li class="active"><a href="#">CSS3 Animation</a></li>
-                    <li><a href="#">General</a></li>
-                    <li><a href="#">Buttons</a></li>
-                </ul>
-
-
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="#"><i class="fa fa-globe fa-lg"></i> CITAS <span class="arrow"></span></a>
-                </li>  
-                <ul class="sub-menu collapse" id="service">
-                  <li>New Service 1</li>
-                  <li>New Service 2</li>
-                  <li>New Service 3</li>
-                </ul>
-
-
-                <li data-toggle="collapse" data-target="#new" class="collapsed">
-                  <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
-                </li>
-                <ul class="sub-menu collapse" id="new">
-                  <li>New New 1</li>
-                  <li>New New 2</li>
-                  <li>New New 3</li>
-                </ul>
-
-
-                 <li data-toggle="collapse" data-target="#detailsCollapse" class="collapsed">
-                  <a href="#">
-                     <i class="fa fa-user fa-lg"></i> Profile <span class="arrow"></span>
-                  </a>
-                  </li>
-                  <ul class="sub-menu collapse" id="detailsCollapse">
-                      <li>personal details</li>
-                  </ul>
-
-                 <li>
-                  <a href="#">
-                  <i class="fa fa-users fa-lg"></i> Users
-                  </a>
-                </li>
+<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SISTEMA CLINICA</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login" (click)="cerrarSession()"><i class="fa fa-sign-out"></i> CERRAR SESION</a></li>
+               
             </ul>
-     </div>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+
+<!-- /Header -->
+
+<!-- Main -->
+
+<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+
+    <ul class="nav nav-pills nav-stacked" style="border-right:1px solid black">
+        <!--<li class="nav-header"></li>-->
+        <li><a href="inicio"><i class="fa fa-arrow-right"></i> HISTORIAL CLINICO</a></li>
+        <li><a href="inicio"><i class="fa fa-arrow-right"></i>CONTROL PERSONAL</a></li>
+        <li><a href="inicio"><i class="fa fa-arrow-right"></i>CITAS</a></li>
+        <li><a href="inicio"><i class="fa fa-arrow-right"></i>CONTROL PACIENTES</a></li>
+        <li><a href="inicio"><i class="fa fa-arrow-right"></i>CONTROL PAQUETES</a></li>
+
+    </ul>
+</div><!-- /span-3 -->
+<div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+    <!-- Right -->
+
+    <a href="#"><strong><span class="fa fa-star"></span> CONTENIDO DE LA PAGINA</strong></a>
+    <hr>
 </div>
