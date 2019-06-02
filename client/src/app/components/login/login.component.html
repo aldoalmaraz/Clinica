@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<html>
+<br>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://spotlightmedia.com/wp-content/uploads/2015/07/ClientLogincol2.png" id="icon" alt="User Icon" />
+    </div>
+
+
+    <!--FORMULARIO LOGIN -->
+    <br>
+    <form action="">
+      <div class="form-group">
+        <textarea name="Correo" [(ngModel)]="paciente.Correo" rows="2" placeholder="Correo" class="form-control"></textarea>
+      </div>
+     <div class="form-group">
+      <input type="Password" name="Password" [(ngModel)]="paciente.Password" rows="2" placeholder="Password" class="form-control">
+    </div>
+      <br>
+      <input type="submit" class="fadeIn fourth" (click)="Login()"value="Loguear">
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">No recuerdas la contraseña?</a>
+    </div>
+  </form>
+  </div>
+</div>
+
+</html>
