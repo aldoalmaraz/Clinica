@@ -13,3 +13,47 @@ CREATE TABLE pacientes (
     Access VARCHAR(200),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE citas (
+    idCitas INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(180),
+    ApellidoPaterno VARCHAR(180),
+    ApellidoMaterno VARCHAR(180),
+    Correo VARCHAR(255),
+    Celular VARCHAR(255),
+    Doctor VARCHAR(255),
+    Hora VARCHAR(255)
+
+);
+
+
+CREATE TABLE personal (
+    idPersonal INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(180),
+    ApellidoPaterno VARCHAR(180),
+    ApellidoMaterno VARCHAR(180),
+    Edad VARCHAR(255),
+    Sexo VARCHAR(255),
+    Correo VARCHAR(255),
+    Celular VARCHAR(255),
+    Domicilio VARCHAR(255),
+    LugarNacimiento VARCHAR(255)
+   
+   
+);
+
+// aqui se muestra la relacion con la tabla personal con idpersonal
+CREATE TABLE Horarios (
+    idHorarios INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Consultorio VARCHAR(255),
+    FechaHora DATETIME,
+    IdPersonal INT
+
+    
+);
+
+
+
+
+
+
