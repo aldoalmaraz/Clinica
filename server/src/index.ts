@@ -36,6 +36,7 @@ class Server {
         this.app.use('/api/citas', citasRoutes);
         this.app.use('/api/citas2', citas2Routes);
         this.app.use('/api/doctores', doctoresRoutes);
+        this.app.use('/api/doctoresHorarios', doctoresRoutes);
 
     }
 

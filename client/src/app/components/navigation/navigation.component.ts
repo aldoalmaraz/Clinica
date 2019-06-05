@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { bloomHasToken } from '@angular/core/src/render3/di';
 import { getBootstrapListener } from '@angular/router/src/router_module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -9,24 +10,16 @@ import { getBootstrapListener } from '@angular/router/src/router_module';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
 CerrarSesion(){
-  let hola;
-  hola=localStorage.getItem('CORREO');
- let hola2="";
-
-if( hola==null){
-alert("No logueado")
-localStorage.setItem("CORREO",hola2);
-}else{alert("logueado con exito");
-
+  localStorage.removeItem('CORREO');
+  this.router.navigate(['/login']);
+  
 }
-}
-
 
 
 }

@@ -48,7 +48,7 @@ CREATE TABLE personal (
 CREATE TABLE Horarios (
     idHorarios INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     Consultorio VARCHAR(255),
-    FechaHora DATETIME,
+    FechaHora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     IdPersonal INT
 
     

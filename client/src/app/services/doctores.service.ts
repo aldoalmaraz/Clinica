@@ -17,9 +17,9 @@ export class DoctoresService {
     return this.http.get(`${this.API_URI}/doctores`); 
    }
 
-  getGame(id: string) {
-    return this.http.get(`${this.API_URI}/doctores/${id}`); 
-   }
+   getGame(id: string) {
+    return this.http.get(`${this.API_URI}/doctoresHorarios/${id}`);
+  }
 
 
 }

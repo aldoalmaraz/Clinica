@@ -8,6 +8,9 @@ import { RegisterComponent } from './components/register/register.component';
 import { CitasListComponent } from './components/citas-list/citas-list.component';
 import { CitaFormComponent } from './components/cita-form/cita-form.component';
 import { DoctoresListComponent } from './components/doctores-list/doctores-list.component';
+import { doctoresHorarioComponent } from './components/doctores-horario/doctores-horario.component';
+import { NologinGuard } from './nologin.guard';
+import { LoginGuard } from './login.guard';
 
 
 const routes: Routes = [
@@ -18,20 +21,20 @@ const routes: Routes = [
   },
   {
     path: 'pacientes',
-    component: PacientesListComponent
+    component: PacientesListComponent,canActivate: [LoginGuard]
   },
   {
     path: 'pacientes/add',
-    component: PacienteFormComponent
+    component: PacienteFormComponent,canActivate: [LoginGuard]
   },
   {
     path: 'pacientes/edit/:id',
-    component: PacienteFormComponent
+    component: PacienteFormComponent,canActivate: [LoginGuard]
   }
   ,
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,canActivate: [NologinGuard]
   }
 
   ,
@@ -41,20 +44,25 @@ const routes: Routes = [
   },
   {
     path: 'citas',
-    component: CitasListComponent
+    component: CitasListComponent,canActivate: [LoginGuard]
   },
   {
     path: 'citas/add',
-    component: CitaFormComponent
+    component: CitaFormComponent,canActivate: [LoginGuard]
   },
   {
     path: 'citas/edit/:id',
-    component: CitaFormComponent
+    component: CitaFormComponent,canActivate: [LoginGuard]
   },
   {
     path: 'doctores',
-    component: DoctoresListComponent
+    component: DoctoresListComponent,canActivate: [LoginGuard]
+  },
+  {
+    path: 'doctores/horarios/:id',
+    component: doctoresHorarioComponent,canActivate: [LoginGuard]
   }
+  
   
 ];
 

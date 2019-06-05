@@ -12,7 +12,7 @@ class DoctoresController {
 
     public async getOne(req: Request, res: Response): Promise<any> {
         const { id } = req.params;
-        const games = await pool.query('SELECT * FROM horarios WHERE id = ?', [id]);
+        const games = await pool.query('SELECT * FROM horarios WHERE IdPersonal = ?', [id]);
         console.log(games.length);
         if (games.length > 0) {
             return res.json(games[0]);
