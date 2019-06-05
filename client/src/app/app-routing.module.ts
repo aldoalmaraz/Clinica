@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CitasListComponent } from './components/citas-list/citas-list.component';
 import { CitaFormComponent } from './components/cita-form/cita-form.component';
+import { DoctoresListComponent } from './components/doctores-list/doctores-list.component';
 
 
 const routes: Routes = [
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'citas/edit/:id',
     component: CitaFormComponent
+  },
+  {
+    path: 'doctores',
+    component: DoctoresListComponent
   }
   
 ];

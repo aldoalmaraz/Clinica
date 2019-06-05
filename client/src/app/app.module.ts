@@ -10,11 +10,14 @@ import { PacientesListComponent } from './components/pacientes-list/pacientes-li
 
 // Services
 import { PacientesService } from './services/pacientes.service';
+import { CitasService } from './services/citas.service';
 import { PacienteFormComponent } from './components/paciente-form/paciente-form.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CitaFormComponent } from './components/cita-form/cita-form.component';
 import { CitasListComponent } from './components/citas-list/citas-list.component';
+import { DoctoresService } from './services/doctores.service';
+import { DoctoresListComponent } from './components/doctores-list/doctores-list.component';
 
 
 @NgModule({
@@ -26,7 +29,8 @@ import { CitasListComponent } from './components/citas-list/citas-list.component
     LoginComponent,
     RegisterComponent,
     CitaFormComponent,
-    CitasListComponent
+    CitasListComponent,
+    DoctoresListComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,10 @@ import { CitasListComponent } from './components/citas-list/citas-list.component
     FormsModule
   ],
   providers: [
-    PacientesService
+    PacientesService,
+    CitasService,
+    DoctoresService
+
   ],
   bootstrap: [AppComponent]
 })

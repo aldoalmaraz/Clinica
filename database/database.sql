@@ -37,7 +37,9 @@ CREATE TABLE personal (
     Correo VARCHAR(255),
     Celular VARCHAR(255),
     Domicilio VARCHAR(255),
-    LugarNacimiento VARCHAR(255)
+    LugarNacimiento VARCHAR(255),
+    Imagen VARCHAR(200),
+    TipoPersonal VARCHAR(200)
    
    
 );

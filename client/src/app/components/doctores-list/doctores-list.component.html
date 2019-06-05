@@ -1,0 +1,21 @@
+<div class="col-md-4" *ngFor="let doc of doctores" >
+  <div class="card text-center">
+    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+      {{doc.Nombre}}
+      
+    </div>
+    <img class="card-img-top" [src]="doc.Imagen">
+    <div class="card-body">
+      <p>{{doc.Nombre}}</p>
+      <p>{{doc.ApellidoPaterno}}</p>
+      <p>{{doc.ApellidoMaterno}}</p>
+      <p>{{doc.Correo}}</p>
+      <p>{{doc.Celular}}</p>
+    
+      <a [routerLink]="['/doctores/edit', doc.idPersonal]" class="btn btn-info btn-block">
+        VER HORARIO
+      </a>
+
+    </div>
+  </div>
+</div>

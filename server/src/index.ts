@@ -7,6 +7,7 @@ import pacientesRoutes from './routes/pacientesRoutes';
 import loginRoutes from './routes/loginRoutes';
 import citasRoutes from './routes/citasRoutes';
 import citas2Routes from './routes/citas2Routes';
+import doctoresRoutes from './routes/doctoresRoutes';
 
 
 class Server {
@@ -34,7 +35,7 @@ class Server {
         this.app.use('/api/login', loginRoutes);
         this.app.use('/api/citas', citasRoutes);
         this.app.use('/api/citas2', citas2Routes);
-   
+        this.app.use('/api/doctores', doctoresRoutes);
 
     }
 
