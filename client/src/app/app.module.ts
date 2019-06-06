@@ -27,6 +27,8 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
 import { AdminNavigationComponent } from './components/admin-navigation/admin-navigation.component';
 import { AdminloginGuard } from './admin-login.guard';
 import { NoAdminLoginGuard } from './noadmin-login.guard';
+import { AdminCitasListComponent } from './components/admin-citas-list/admin-citas-list.component';
+import { AdminCitasFormComponent } from './components/admin-citas-form/admin-citas-form.component';
 
 
 
@@ -45,6 +47,8 @@ import { NoAdminLoginGuard } from './noadmin-login.guard';
     HistorialComponent,
     AdminLoginComponent,
     AdminNavigationComponent,
+    AdminCitasListComponent,
+    AdminCitasFormComponent,
   ],
   imports: [
     BrowserModule,

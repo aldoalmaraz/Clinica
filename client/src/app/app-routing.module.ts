@@ -15,6 +15,8 @@ import { HistorialComponent } from './components/historial/historial.component';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 import { AdminloginGuard } from './admin-login.guard';
 import { NoAdminLoginGuard } from './noadmin-login.guard';
+import { AdminCitasListComponent } from './components/admin-citas-list/admin-citas-list.component';
+import { AdminCitasFormComponent } from './components/admin-citas-form/admin-citas-form.component';
 
 
 
@@ -76,6 +78,19 @@ const routes: Routes = [
   {
     path: 'adminLogin',
     component: AdminLoginComponent
+  }
+  ,
+  {
+    path: 'adminCitas',
+    component: AdminCitasListComponent
+  },
+  {
+    path: 'adminCitas/add',
+    component: AdminCitasFormComponent
+  },
+  {
+    path: 'adminCitas/edit/:id',
+    component: AdminCitasFormComponent
   }
   
 ];

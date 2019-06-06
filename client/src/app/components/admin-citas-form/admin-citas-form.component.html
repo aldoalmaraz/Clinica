@@ -1,0 +1,42 @@
+<app-admin-navigation></app-admin-navigation>
+
+<div class="col-md-4 offset-md-2">
+  <div class="card">
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <input type="text" name="Nombre" [(ngModel)]="adminCitas.Nombre" placeholder="Nombre" class="form-control" autofocus>
+        </div>
+        <div class="form-group">
+          <textarea name="ApellidoPaterno" [(ngModel)]="adminCitas.ApellidoPaterno" rows="2" placeholder="ApellidoPaterno" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="ApellidoMaterno" [(ngModel)]="adminCitas.ApellidoMaterno" rows="2" placeholder="ApellidoMaterno" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="Celular" [(ngModel)]="adminCitas.Celular" rows="2" placeholder="Celular" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="Doctor" [(ngModel)]="adminCitas.Doctor" rows="2" placeholder="Doctor" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="datetime-local" name="Hora" [(ngModel)]="adminCitas.Hora" rows="2" placeholder="Hora" class="form-control">
+        </div>
+        <button class="btn btn-success btn-block" (click)="edit ? updateGame() : saveNewGame()">
+          GUARDAR
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card card-body text-center">
+    <h3>{{adminCitas.idCitas}}. {{adminCitas.Nombre == '' ? 'Nombre' : adminCitas.Nombre}}</h3>
+    <p>{{adminCitas.ApellidoPaterno == '' ? 'Escribe Apellido Paterno' : adminCitas.ApellidoPaterno}}</p>
+    <p>{{adminCitas.ApellidoMaterno == '' ? 'Escribe Apellido Materno' : adminCitas.ApellidoMaterno}}</p>
+    <p>{{adminCitas.Celular == '' ? 'Escribe Numero de celular' : adminCitas.Celular}}</p>
+    <p>{{adminCitas.Doctor == '' ? 'Escribe el doctor' : adminCitas.Doctor}}</p>
+    <p>{{adminCitas.Hora == '' ? 'Escribe la hora' : adminCitas.Hora}}</p>
+  </div>
+</div>

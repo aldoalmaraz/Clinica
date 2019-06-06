@@ -17,6 +17,7 @@ export class AdminNavigationComponent implements OnInit {
 
   CerrarSesion(){
     localStorage.removeItem('CORREO');
+    localStorage.removeItem('ACCESS');
     this.router.navigate(['/adminLogin']);
     
   }

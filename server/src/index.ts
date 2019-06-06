@@ -11,6 +11,8 @@ import doctoresRoutes from './routes/doctoresRoutes';
 import historialRoutes from './routes/historialRoutes';
 import NumCitasRoutes from './routes/NumCitasRoutes';
 import adminLoginRoutes from './routes/adminLoginRoutes';
+import adminCitasRoutes from './routes/adminCitasRoutes';
+import adminCitas2Routes from './routes/adminCitas2Routes';
 
 
 class Server {
@@ -43,6 +45,8 @@ class Server {
         this.app.use('/api/historial', historialRoutes);
         this.app.use('/api/historial/NumCitas', NumCitasRoutes);
         this.app.use('/api/adminLogin', adminLoginRoutes);
+        this.app.use('/api/adminCitas', adminCitasRoutes);
+        this.app.use('/api/adminCitas2', adminCitas2Routes);
 
 
 
