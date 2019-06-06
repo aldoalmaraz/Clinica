@@ -10,6 +10,7 @@ import citas2Routes from './routes/citas2Routes';
 import doctoresRoutes from './routes/doctoresRoutes';
 import historialRoutes from './routes/historialRoutes';
 import NumCitasRoutes from './routes/NumCitasRoutes';
+import adminLoginRoutes from './routes/adminLoginRoutes';
 
 
 class Server {
@@ -41,6 +42,9 @@ class Server {
         this.app.use('/api/doctoresHorarios', doctoresRoutes);
         this.app.use('/api/historial', historialRoutes);
         this.app.use('/api/historial/NumCitas', NumCitasRoutes);
+        this.app.use('/api/adminLogin', adminLoginRoutes);
+
+
 
 
     }

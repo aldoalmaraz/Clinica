@@ -23,6 +23,7 @@ import { doctoresHorarioComponent } from './components/doctores-horario/doctores
 import { LoginGuard } from './login.guard';
 import { NologinGuard } from './nologin.guard';
 import { HistorialComponent } from './components/historial/historial.component';
+import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 
 
 
@@ -39,6 +40,7 @@ import { HistorialComponent } from './components/historial/historial.component';
     DoctoresListComponent,
     doctoresHorarioComponent,
     HistorialComponent,
+    AdminLoginComponent,
   ],
   imports: [
     BrowserModule,
