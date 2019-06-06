@@ -44,6 +44,7 @@ export class LoginComponent implements OnInit {
           }else{
             this.router.navigate(['/pacientes']);
             localStorage.setItem("CORREO",this.paciente.Correo);
+            
 
 
           }

@@ -22,6 +22,7 @@ import { DoctoresListComponent } from './components/doctores-list/doctores-list.
 import { doctoresHorarioComponent } from './components/doctores-horario/doctores-horario.component';
 import { LoginGuard } from './login.guard';
 import { NologinGuard } from './nologin.guard';
+import { HistorialComponent } from './components/historial/historial.component';
 
 
 
@@ -37,6 +38,7 @@ import { NologinGuard } from './nologin.guard';
     CitasListComponent,
     DoctoresListComponent,
     doctoresHorarioComponent,
+    HistorialComponent,
   ],
   imports: [
     BrowserModule,

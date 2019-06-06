@@ -11,6 +11,7 @@ import { DoctoresListComponent } from './components/doctores-list/doctores-list.
 import { doctoresHorarioComponent } from './components/doctores-horario/doctores-horario.component';
 import { NologinGuard } from './nologin.guard';
 import { LoginGuard } from './login.guard';
+import { HistorialComponent } from './components/historial/historial.component';
 
 
 const routes: Routes = [
@@ -62,7 +63,11 @@ const routes: Routes = [
     path: 'doctores/horarios/:id',
     component: doctoresHorarioComponent,canActivate: [LoginGuard]
   }
-  
+  ,
+  {
+    path: 'doctores/historial',
+    component: HistorialComponent,canActivate: [LoginGuard]
+  }
   
 ];
 

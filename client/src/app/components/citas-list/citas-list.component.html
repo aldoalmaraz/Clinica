@@ -7,10 +7,12 @@
       </button>
     </div>
     <div class="card-body">
-      <p>{{cita.Nombre}}</p>
+      <p>NOMBRE DE LA CITA: {{cita.Nombre}}</p>
+      <p>NOMBRE DEL DOCTOR: {{cita.Doctor}}</p>
+      <p>FECHA Y HORA DE LA CITA: {{cita.Hora}}</p>
   
       <a [routerLink]="['/citas/edit', cita.idCitas]" class="btn btn-info btn-block">
-        MODIFICAR PACIENTE
+        MODIFICAR CITA
       </a>
     </div>
   </div>

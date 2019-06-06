@@ -8,6 +8,8 @@ import loginRoutes from './routes/loginRoutes';
 import citasRoutes from './routes/citasRoutes';
 import citas2Routes from './routes/citas2Routes';
 import doctoresRoutes from './routes/doctoresRoutes';
+import historialRoutes from './routes/historialRoutes';
+import NumCitasRoutes from './routes/NumCitasRoutes';
 
 
 class Server {
@@ -37,6 +39,9 @@ class Server {
         this.app.use('/api/citas2', citas2Routes);
         this.app.use('/api/doctores', doctoresRoutes);
         this.app.use('/api/doctoresHorarios', doctoresRoutes);
+        this.app.use('/api/historial', historialRoutes);
+        this.app.use('/api/historial/NumCitas', NumCitasRoutes);
+
 
     }
 
