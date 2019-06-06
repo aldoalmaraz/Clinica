@@ -77,20 +77,20 @@ const routes: Routes = [
   ,
   {
     path: 'adminLogin',
-    component: AdminLoginComponent
+    component: AdminLoginComponent 
   }
   ,
   {
     path: 'adminCitas',
-    component: AdminCitasListComponent
+    component: AdminCitasListComponent,canActivate: [LoginGuard,AdminloginGuard]
   },
   {
     path: 'adminCitas/add',
-    component: AdminCitasFormComponent
+    component: AdminCitasFormComponent,canActivate: [LoginGuard,AdminloginGuard]
   },
   {
     path: 'adminCitas/edit/:id',
-    component: AdminCitasFormComponent
+    component: AdminCitasFormComponent,canActivate: [LoginGuard,AdminloginGuard]
   }
   
 ];

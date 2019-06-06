@@ -48,8 +48,6 @@ export class AdminCitasFormComponent implements OnInit {
   }
 
   saveNewGame() {
-   let correo=localStorage.getItem('CORREO');
-   this.adminCitas.Correo=correo;
    
     this.adminCitasService.saveGame(this.adminCitas)
       .subscribe(

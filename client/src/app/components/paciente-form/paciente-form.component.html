@@ -14,6 +14,12 @@
           <textarea name="ApellidoMaterno" [(ngModel)]="paciente.ApellidoMaterno" rows="2" placeholder="ApellidoMaterno" class="form-control"></textarea>
         </div>
         <div class="form-group">
+            <textarea name="Correo" [(ngModel)]="paciente.Correo" rows="2" placeholder="Correo" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+              <input type="Password" name="Password" [(ngModel)]="paciente.Password" rows="2" placeholder="Password" class="form-control">
+            </div>
+        <div class="form-group">
           <input type="url" name="image URL" [(ngModel)]="paciente.Imagen" placeholder="Imagen" class="form-control">
         </div>
         <button class="btn btn-success btn-block" (click)="edit ? updateGame() : saveNewGame()">

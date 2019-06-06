@@ -20,6 +20,9 @@
           <textarea name="Doctor" [(ngModel)]="adminCitas.Doctor" rows="2" placeholder="Doctor" class="form-control"></textarea>
         </div>
         <div class="form-group">
+            <textarea name="Correo" [(ngModel)]="adminCitas.Correo" rows="2" placeholder="Correo" class="form-control"></textarea>
+          </div>
+        <div class="form-group">
           <input type="datetime-local" name="Hora" [(ngModel)]="adminCitas.Hora" rows="2" placeholder="Hora" class="form-control">
         </div>
         <button class="btn btn-success btn-block" (click)="edit ? updateGame() : saveNewGame()">
@@ -37,6 +40,7 @@
     <p>{{adminCitas.ApellidoMaterno == '' ? 'Escribe Apellido Materno' : adminCitas.ApellidoMaterno}}</p>
     <p>{{adminCitas.Celular == '' ? 'Escribe Numero de celular' : adminCitas.Celular}}</p>
     <p>{{adminCitas.Doctor == '' ? 'Escribe el doctor' : adminCitas.Doctor}}</p>
+    <p>{{adminCitas.Correo == '' ? 'Escribe la hora' : adminCitas.Correo}}</p>
     <p>{{adminCitas.Hora == '' ? 'Escribe la hora' : adminCitas.Hora}}</p>
   </div>
 </div>
