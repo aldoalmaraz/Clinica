@@ -8,5 +8,6 @@ export interface AdminLogin {
     Correo?: string,
     Password?: string,
     Imagen?: string,
+    Access?:string,
     created_at?: Date
 };

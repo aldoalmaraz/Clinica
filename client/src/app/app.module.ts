@@ -24,6 +24,9 @@ import { LoginGuard } from './login.guard';
 import { NologinGuard } from './nologin.guard';
 import { HistorialComponent } from './components/historial/historial.component';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
+import { AdminNavigationComponent } from './components/admin-navigation/admin-navigation.component';
+import { AdminloginGuard } from './admin-login.guard';
+import { NoAdminLoginGuard } from './noadmin-login.guard';
 
 
 
@@ -41,6 +44,7 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
     doctoresHorarioComponent,
     HistorialComponent,
     AdminLoginComponent,
+    AdminNavigationComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,8 +57,9 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
     CitasService,
     DoctoresService,
     LoginGuard,
-    NologinGuard
-
+    NologinGuard,
+    AdminloginGuard,
+    NoAdminLoginGuard
   ],
   bootstrap: [AppComponent]
 })

@@ -23,6 +23,7 @@ export class AdminLoginComponent implements OnInit {
     Correo: '',
     Password: '',
     Imagen: '',
+    Access:'',
     created_at: new Date()
   };
 
@@ -42,8 +43,11 @@ export class AdminLoginComponent implements OnInit {
           if(res=="No existe"){
           this.router.navigate(['/adminLogin']);
           }else{
+            this.adminLogin.Access='admin';
             this.router.navigate(['/pacientes']);
             localStorage.setItem("CORREO",this.adminLogin.Correo);
+            localStorage.setItem("ACCESS",this.adminLogin.Access);
+       
           }
         },
         err => console.error(err)

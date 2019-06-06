@@ -13,6 +13,9 @@ import { NologinGuard } from './nologin.guard';
 import { LoginGuard } from './login.guard';
 import { HistorialComponent } from './components/historial/historial.component';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
+import { AdminloginGuard } from './admin-login.guard';
+import { NoAdminLoginGuard } from './noadmin-login.guard';
+
 
 
 const routes: Routes = [
@@ -23,15 +26,15 @@ const routes: Routes = [
   },
   {
     path: 'pacientes',
-    component: PacientesListComponent,canActivate: [LoginGuard]
+    component: PacientesListComponent,canActivate: [LoginGuard,AdminloginGuard]
   },
   {
     path: 'pacientes/add',
-    component: PacienteFormComponent,canActivate: [LoginGuard]
+    component: PacienteFormComponent,canActivate: [LoginGuard,AdminloginGuard]
   },
   {
     path: 'pacientes/edit/:id',
-    component: PacienteFormComponent,canActivate: [LoginGuard]
+    component: PacienteFormComponent,canActivate: [LoginGuard,AdminloginGuard]
   }
   ,
   {
@@ -46,28 +49,28 @@ const routes: Routes = [
   },
   {
     path: 'citas',
-    component: CitasListComponent,canActivate: [LoginGuard]
+    component: CitasListComponent,canActivate: [LoginGuard,NoAdminLoginGuard]
   },
   {
     path: 'citas/add',
-    component: CitaFormComponent,canActivate: [LoginGuard]
+    component: CitaFormComponent,canActivate: [LoginGuard,NoAdminLoginGuard]
   },
   {
     path: 'citas/edit/:id',
-    component: CitaFormComponent,canActivate: [LoginGuard]
+    component: CitaFormComponent,canActivate: [LoginGuard,NoAdminLoginGuard]
   },
   {
     path: 'doctores',
-    component: DoctoresListComponent,canActivate: [LoginGuard]
+    component: DoctoresListComponent,canActivate: [LoginGuard,NoAdminLoginGuard]
   },
   {
     path: 'doctores/horarios/:id',
-    component: doctoresHorarioComponent,canActivate: [LoginGuard]
+    component: doctoresHorarioComponent,canActivate: [LoginGuard,NoAdminLoginGuard]
   }
   ,
   {
     path: 'doctores/historial',
-    component: HistorialComponent,canActivate: [LoginGuard]
+    component: HistorialComponent,canActivate: [LoginGuard,NoAdminLoginGuard]
   }
   ,
   {

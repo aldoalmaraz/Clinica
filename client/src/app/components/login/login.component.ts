@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
           if(res=="No existe"){
           this.router.navigate(['/login']);
           }else{
-            this.router.navigate(['/pacientes']);
+            this.router.navigate(['/citas']);
             localStorage.setItem("CORREO",this.paciente.Correo);
             
 
