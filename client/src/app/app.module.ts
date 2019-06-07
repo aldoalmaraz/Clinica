@@ -29,6 +29,9 @@ import { AdminloginGuard } from './admin-login.guard';
 import { NoAdminLoginGuard } from './noadmin-login.guard';
 import { AdminCitasListComponent } from './components/admin-citas-list/admin-citas-list.component';
 import { AdminCitasFormComponent } from './components/admin-citas-form/admin-citas-form.component';
+import { PersonalFormComponent } from './components/personal-form/personal-form.component';
+import { PersonalListComponent } from './components/personal-list/personal-list.component';
+import { PersonalService } from './services/personal.service';
 
 
 
@@ -49,6 +52,8 @@ import { AdminCitasFormComponent } from './components/admin-citas-form/admin-cit
     AdminNavigationComponent,
     AdminCitasListComponent,
     AdminCitasFormComponent,
+    PersonalFormComponent,
+    PersonalListComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,7 +68,8 @@ import { AdminCitasFormComponent } from './components/admin-citas-form/admin-cit
     LoginGuard,
     NologinGuard,
     AdminloginGuard,
-    NoAdminLoginGuard
+    NoAdminLoginGuard,
+    PersonalService
   ],
   bootstrap: [AppComponent]
 })

@@ -17,6 +17,8 @@ import { AdminloginGuard } from './admin-login.guard';
 import { NoAdminLoginGuard } from './noadmin-login.guard';
 import { AdminCitasListComponent } from './components/admin-citas-list/admin-citas-list.component';
 import { AdminCitasFormComponent } from './components/admin-citas-form/admin-citas-form.component';
+import { PersonalListComponent } from './components/personal-list/personal-list.component';
+import { PersonalFormComponent } from './components/personal-form/personal-form.component';
 
 
 
@@ -91,8 +93,19 @@ const routes: Routes = [
   {
     path: 'adminCitas/edit/:id',
     component: AdminCitasFormComponent,canActivate: [LoginGuard,AdminloginGuard]
+  },
+  {
+    path: 'personal',
+    component: PersonalListComponent,canActivate: [LoginGuard,AdminloginGuard]
+  },
+  {
+    path: 'personal/add',
+    component: PersonalFormComponent,canActivate: [LoginGuard,AdminloginGuard]
+  },
+  {
+    path: 'personal/edit/:id',
+    component: PersonalFormComponent,canActivate: [LoginGuard,AdminloginGuard]
   }
-  
 ];
 
 @NgModule({

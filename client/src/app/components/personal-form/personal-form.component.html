@@ -1,0 +1,57 @@
+<app-admin-navigation></app-admin-navigation>
+
+<div class="col-md-4 offset-md-2">
+  <div class="card">
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <input type="text" name="Nombre" [(ngModel)]="personal.Nombre" placeholder="Nombre" class="form-control" autofocus>
+        </div>
+        <div class="form-group">
+          <textarea name="ApellidoPaterno" [(ngModel)]="personal.ApellidoPaterno" rows="2" placeholder="ApellidoPaterno" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="ApellidoMaterno" [(ngModel)]="personal.ApellidoMaterno" rows="2" placeholder="ApellidoMaterno" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <textarea name="Edad" [(ngModel)]="personal.Edad" rows="2" placeholder="Edad" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="Sexo" [(ngModel)]="personal.Sexo" rows="2" placeholder="Sexo" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="Correo" [(ngModel)]="personal.Correo" rows="2" placeholder="Correo" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="Celular" [(ngModel)]="personal.Celular" rows="2" placeholder="Celular" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="Domicilio" [(ngModel)]="personal.Domicilio" rows="2" placeholder="Domicilio" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="LugarNacimiento" [(ngModel)]="personal.LugarNacimiento" rows="2" placeholder="LugarNacimiento" class="form-control"></textarea>
+          </div>
+        
+        <div class="form-group">
+          <input type="url" name="image URL" [(ngModel)]="personal.Imagen" placeholder="Imagen" class="form-control">
+        </div>
+        <div class="form-group">
+          <textarea name="TipoPersonal" [(ngModel)]="personal.TipoPersonal" rows="2" placeholder="TipoPersonal" class="form-control"></textarea>
+        </div>
+        <button class="btn btn-success btn-block" (click)="edit ? updateGame() : saveNewGame()">
+          GUARDAR
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card card-body text-center">
+  <img [src]="personal.Imagen == '' ? '/assets/noimage.png' : personal.Imagen" alt="No Image" class="card-img-top">
+    <h3>{{personal.idPersonal}}. {{personal.Nombre == '' ? 'Nombre de personal' : personal.Nombre}}</h3>
+    <p>{{personal.ApellidoPaterno == '' ? 'Escribe Apellido Paterno' : personal.ApellidoPaterno}}</p>
+    <p>{{personal.ApellidoMaterno == '' ? 'Escribe Apellido Materno' : personal.ApellidoMaterno}}</p>
+
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<app-admin-navigation></app-admin-navigation>
+
+
+<div class="col-md-4" *ngFor="let pers of personal">
+  <div class="card text-center">
+    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+      {{pers.Nombre}}
+      <button class="btn btn-danger" (click)="deleteGame(pers.id)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <img class="card-img-top" [src]="pers.Imagen">
+    <div class="card-body">
+      <p>{{pers.Nombre}}</p>
+  
+      <a [routerLink]="['/personal/edit', pers.idPersonal]" class="btn btn-info btn-block">
+        MODIFICAR PERSONAL
+      </a>
+    </div>
+  </div>
+</div>

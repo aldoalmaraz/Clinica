@@ -13,6 +13,7 @@ import NumCitasRoutes from './routes/NumCitasRoutes';
 import adminLoginRoutes from './routes/adminLoginRoutes';
 import adminCitasRoutes from './routes/adminCitasRoutes';
 import adminCitas2Routes from './routes/adminCitas2Routes';
+import personalRoutes from './routes/personalRoutes';
 
 
 class Server {
@@ -47,6 +48,7 @@ class Server {
         this.app.use('/api/adminLogin', adminLoginRoutes);
         this.app.use('/api/adminCitas', adminCitasRoutes);
         this.app.use('/api/adminCitas2', adminCitas2Routes);
+        this.app.use('/api/personal', personalRoutes);
 
 
 
