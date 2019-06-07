@@ -23,7 +23,9 @@ export class LoginComponent implements OnInit {
     Correo: '',
     Password: '',
     Imagen: '',
-    created_at: new Date()
+    created_at: new Date(),
+    EnfermedadesCronicas:'',
+    ResumenClinico:''
   };
 
  Login() {

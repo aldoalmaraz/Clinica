@@ -19,6 +19,7 @@ import { AdminCitasListComponent } from './components/admin-citas-list/admin-cit
 import { AdminCitasFormComponent } from './components/admin-citas-form/admin-citas-form.component';
 import { PersonalListComponent } from './components/personal-list/personal-list.component';
 import { PersonalFormComponent } from './components/personal-form/personal-form.component';
+import { ResumenClinicoFormComponent } from './components/resumenclinico/resumenclinico.component';
 
 
 
@@ -106,6 +107,17 @@ const routes: Routes = [
     path: 'personal/edit/:id',
     component: PersonalFormComponent,canActivate: [LoginGuard,AdminloginGuard]
   }
+  ,
+  {
+    path: 'personal/edit/:id',
+    component: PersonalFormComponent,canActivate: [LoginGuard,AdminloginGuard]
+  },
+  {
+    path: 'pacientes/resumenClinico/:id',
+    component: ResumenClinicoFormComponent,canActivate: [LoginGuard,AdminloginGuard]
+  }
+
+
 ];
 
 @NgModule({

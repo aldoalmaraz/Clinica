@@ -12,6 +12,7 @@ class AdminLoginRoutes {
 
     config() {
         this.router.post('/', adminLoginController.Comparar);  
+
           
 
     }

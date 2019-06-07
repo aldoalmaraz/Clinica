@@ -9,5 +9,5 @@ export interface AdminLogin {
     Password?: string,
     Imagen?: string,
     Access?:string,
-    created_at?: Date
+    created_at?: string
 };

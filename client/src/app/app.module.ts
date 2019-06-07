@@ -32,6 +32,8 @@ import { AdminCitasFormComponent } from './components/admin-citas-form/admin-cit
 import { PersonalFormComponent } from './components/personal-form/personal-form.component';
 import { PersonalListComponent } from './components/personal-list/personal-list.component';
 import { PersonalService } from './services/personal.service';
+import { AdminLoginService } from './services/adminLogin.service';
+import { ResumenClinicoFormComponent } from './components/resumenclinico/resumenclinico.component';
 
 
 
@@ -54,6 +56,8 @@ import { PersonalService } from './services/personal.service';
     AdminCitasFormComponent,
     PersonalFormComponent,
     PersonalListComponent,
+    ResumenClinicoFormComponent
+
   ],
   imports: [
     BrowserModule,
@@ -69,7 +73,8 @@ import { PersonalService } from './services/personal.service';
     NologinGuard,
     AdminloginGuard,
     NoAdminLoginGuard,
-    PersonalService
+    PersonalService,
+    AdminLoginService
   ],
   bootstrap: [AppComponent]
 })

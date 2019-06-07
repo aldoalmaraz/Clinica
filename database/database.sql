@@ -11,7 +11,9 @@ CREATE TABLE pacientes (
     Password VARCHAR(255),
     Imagen VARCHAR(200),
     Access VARCHAR(200),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    EnfermedadesCronicas VARCHAR(200),
+    ResumenClinico VARCHAR(900)
 );
 
 CREATE TABLE citas (

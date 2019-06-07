@@ -5,11 +5,12 @@ import { PacientesService } from 'src/app/services/pacientes.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-paciente-form',
-  templateUrl: './paciente-form.component.html',
-  styleUrls: ['./paciente-form.component.css']
+  selector: 'app-resumenclinico',
+  templateUrl: './resumenclinico.component.html',
+  styleUrls: ['./resumenclinico.component.css']
 })
-export class PacienteFormComponent implements OnInit {
+
+export class ResumenClinicoFormComponent implements OnInit {
 
   @HostBinding('class') clases = 'row';
 

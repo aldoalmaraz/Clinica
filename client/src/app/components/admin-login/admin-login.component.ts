@@ -24,7 +24,7 @@ export class AdminLoginComponent implements OnInit {
     Password: '',
     Imagen: '',
     Access:'',
-    created_at: new Date()
+    created_at:''
   };
 
  Login() {

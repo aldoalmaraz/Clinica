@@ -8,5 +8,7 @@ export interface Paciente {
     Correo?: string,
     Password?: string,
     Imagen?: string,
-    created_at?: Date
+    created_at?: Date,
+    EnfermedadesCronicas?:string,
+    ResumenClinico?:string
 };
